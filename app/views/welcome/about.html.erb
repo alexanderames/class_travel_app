@@ -6,6 +6,9 @@
 
 <h1>About Fave Places</h1>
 	<p>My favorite color is <%= @color %></p>
+	<%= link_to "Blue", about_path(color:"blue"), class: "btn btn-primary" %>
+	<%= link_to "Pink", about_path(color:"pink"), class: "btn btn-danger" %>
+
 	<% if @size > 12 %>
 	<p>My shoe size is <%= @size %>. I have HUGE feet.</p>
 	<% else %>
@@ -13,5 +16,5 @@
 	<% end %>
 
 <% @travel_pics.each do |pic| %>
-  <%= image_tag pic %>
+  <%= image_tag pic, class: "img-responsive" %>
 <% end %>
