@@ -1,7 +1,11 @@
 class WelcomeController < ApplicationController
   def index
-  	@homestate = 'Arizona'
-  	@countries = ['France', 'Italy', 'Spain', 'The UK']
+  @homestate = 'Arizona'
+  @countries = ['France', 'Italy', 'Spain', 'The UK']
+  @united_states = {"capital city" => "Washington, DC", 
+                     "favorite city" => "Asheville, NC", 
+                     "favorite state" => "Oregon", 
+                     "flag colors" => ["red", "white", "blue"]}
   end
 
   def about

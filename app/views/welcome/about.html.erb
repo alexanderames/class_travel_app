@@ -15,6 +15,6 @@
 	<p>My shoe size is <%= @size %></p>
 	<% end %>
 
-<% @travel_pics.each do |pic| %>
+<% @travel_pics.shuffle.each do |pic| %>
   <%= image_tag pic, class: "img-responsive" %>
 <% end %>
