@@ -7,7 +7,7 @@
 
 <%= image_tag @destination.avatar.url(:thumb) %>
 
-<h1><%= "#{@destination.city}, #{@destination.country}" %></h1>
+<h1><%= @destination.address %></h1>
 
 <h2>Population (in millions) <%= @destination.population %></h2>
 
